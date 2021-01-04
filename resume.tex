@@ -1,8 +1,5 @@
 %-------------------------
-% Resume in Latex
-% Author : Meet Daxini
-% Resume repo: 
-% My Website: https://meetdaxini.pythonanywhere.com/
+% Meet Daxini's resume
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -91,6 +88,19 @@
 
 \end{tabular*}
 
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Swan Softweb Solutions}{Ahmedabad, India}
+      {Python Developer}{11/2020 - Present}
+      
+      \resumeItemListStart
+        \item{Worked on developing back-end of a device location tracking application and exposed them via REST API using Django Rest Framework which is consumed by front-end and its users. Configured celery for asynchronous tasks and scheduling cron jobs, firestore for realtime device location tracking, firebase cloud messaging for push notifications, mandrill for sending emails and google cloud storage bucket for media storage.}
+
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -98,7 +108,6 @@
     \resumeSubheading
     {Bachelor of Engineering in Information Technology  (CGPA: 8.05/10.0)}{08/2016 -- 08/2020}
       {Sal College of Engineering}{Ahmedabad, India}
-      
   \resumeSubHeadingListEnd
   
 
@@ -106,10 +115,10 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Proficient in}{: Python, Django, Pandas, C, HTML, CSS}
+     \textbf{Proficient in}{: Python, Django, Django Rest Framework, HTML, CSS}
    }
    \item{
-     \textbf{Familiar with}{: JavaScript, Bootstrap, PostgresQL, MySQL, Google cloud run, Docker}
+     \textbf{Familiar with}{: JavaScript, Bootstrap, PostgresQL, Redis, Celery, Google Cloud Platform, Docker}
    }
    \item{
      \textbf{Operating System}{: Windows and Linux (Ubuntu/Debian)}
@@ -124,24 +133,18 @@
   \resumeSubHeadingListStart
     
     \resumeSubItem{Alot Todo (\href{http://github.com/meetdaxini/Alot_Todo}{\faGithub  \hspace{0.05cm} \texttt{meetdaxini/Alot\_Todo}})}
-      {Alot Todo is a multi-user task manager web app made built using django as back-end and HTML, CSS and Bootstrap for the front-end. It is deployed using Heroku and PostgreSQL. Project is live at :} \newline \newline
+      {Alot Todo is a multi-user task manager web app made built using Django, HTML, CSS and Bootstrap. It is deployed using Heroku and PostgreSQL. Project is live at :} \newline \newline
       \href{http://alot-todo.herokuapp.com}{\faLink \hspace{0.05cm} \texttt{alot-todo.herokuapp.com}}
       
     \resumeSubItem{Movie Recommender (\href{http://github.com/meetdaxini/movie-recommender-project}{\faGithub  \hspace{0.05cm}
       \texttt{meetdaxini/movie-recommender-project}})}
-      {Built using Django, HTML, CSS and Bootstrap. It is deployed by using a Docker Container, Google Cloud Run, Google Cloud SQL(PostgreSQL). It uses TMDB API for daily trending movies data and poster, TasteDive API for movie recommendations \& OMDB API for movie ratings data and posters. The omdb api calls are then stored in the database so next time the same movie data will not be fetched from external api. Project is live at :  }\newline \newline
+      {Built using Django, HTML, CSS and Bootstrap. It is deployed by using a Docker Container, Google Cloud Run, Google Cloud SQL(PostgreSQL). It uses external APIs for getting movies data and recommendations \& also saves the movies data in the database so next time the same movie data will not be fetched from external api. Project is live at :  }\newline \newline
       \href{http://movie-recommender-project-mdsqpgljvq-uc.a.run.app/}{\faLink \hspace{0.05cm} 
     \texttt {movie-recommender-project-mdsqpgljvq-uc.a.run.app}}
     
-    \resumeSubItem{Text Utilities (\href{http://github.com/meetdaxini/textutils}{\faGithub  \hspace{0.05cm}
-      \texttt{meetdaxini/textutils}})}
-      {This website provides text utilities like punctuation remover, character count, UPPERCASE, lowercase, new line remover, and space remover.You can use multiple utilities together also. It also provides a secure random password generator too. Project is live at :  }\newline \newline
-      \href{https://mytextutilities.herokuapp.com/}{\faLink \hspace{0.05cm} 
-    \texttt {mytextutilities.herokuapp.com}}
-    
     \resumeSubItem{Faces from Keywords (\href{https://github.com/meetdaxini/Faces_from_Keywords}{\faGithub  \hspace{0.05cm}
       \texttt{meetdaxini/Faces\_from\_Keywords}})}
-      {In this project, I did character recognition using pytesseract on news paper clippings  to find a particular keywords and if the keywords matched, then just the human faces in that image are cropped into contact sheet using openCV, numpy, Pillow   This was final project for Coursera Python 3 Programming Specialization. }
+      {In this project, I did character recognition using pytesseract on news paper clippings  to find a particular keywords and if the keywords matched, then just the human faces in that image are cropped into contact sheet using openCV, numpy, Pillow. }
       
     \resumeSubItem{My Portfolio (\href{https://github.com/meetdaxini/my_portfolio}{\faGithub  \hspace{0.05cm}
       \texttt{meetdaxini/my\_portfolio}})}
