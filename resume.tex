@@ -2,7 +2,7 @@
 % Meet Daxini's resume
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[9pt,letterpaper]{article}
 \usepackage{fontawesome}
 \usepackage{setspace}
 \usepackage{latexsym}
@@ -33,6 +33,8 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength\lineskip{1pt}
+\setlength\itemsep{0in}
 
 % Sections formatting
 \titleformat{\section}{
@@ -61,6 +63,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSkillListStart}{\begin{itemize}[noitemsep,leftmargin=*]}
+\newcommand{\resumeSkillListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -85,69 +89,76 @@
     
     \\
     & \href{http://github.com/meetdaxini}{\faGithub \hspace{0.05cm} \texttt{github.com/meetdaxini}}
-
 \end{tabular*}
-
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Swan Softweb Solutions}{Ahmedabad, India}
-      {Python Developer}{11/2020 - 11/2021}
-      \resumeItemListStart
-        \item{Worked on developing and deploying Web apps and REST APIs using Django and Flask. Used PostsgresQL, DynamoDB, MongoDb and MySQL as databases. Created a pipeline to transfer all data from DynamoDB to Athena to generate charts and reports on QuickSight periodically. Configured celery and redis for background tasks and cron jobs. Created python script to migrate MySQL data to PostgreSQL. Also worked on an IOT project where communications were done via UDP with real-time tracking devices }
-
+      {Gmware Pvt Ltd}{12/2021 - Present}
+      {Software Engineer}{}
+      \resumeItemListStart[noitemsep]
+    \item{Working as a Full Stack Developer on a large web app with an extensive tech stack.}
+        \item{Creating CRUD APIs on the Django Rest Framework and integrating these APIs along with template binding on Angular.}
+       \item{Developed microservices and containerized them with Docker}
+       \item{Handled Big Data using AWS Athena and Redshift Spectrum to show charts and reports by aggregating high-speed event streams in real-time.}
+       \item{Maintained materialized views on Postgres to run big queries which showed aggregations of time series data.}
+       \item{Added functionality to automate manual processes such as image similarity check and extracting text from images using OpenCV and NumPy.}
+       \item{Integrated full-text search and fuzzy search using Elasticsearch.}
       \resumeItemListEnd
+
+    \resumeSubheading
+      {Swan Softweb Solutions}{11/2020 - 11/2021}
+      {Python Developer}{}
+      \resumeItemListStart[noitemsep]
+        \item{Worked on developing and deploying Web apps and REST APIs using Django and Flask with PostgreSQL, DynamoDB, and MongoDB as databases.}
+        \item{Analyzed and Optimized PostgreSQL and MongoDb queries which reduced the time to load drastically.}
+        \item{Created ETL scripts to periodically transfer all data from DynamoDB to AWS Athena to generate charts and reports on AWS QuickSight.}
+        \item{Also worked on developing UDP WebSockets with Node.js to communicate with Queclink GL300M devices so that users can track and get notified about their device movement and location in real-time.}
+        \item{Integrated Payments, Refunds, and Push Notifications}
+      \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Bachelor of Engineering in Information Technology  (CGPA: 8.05/10.0)}{08/2016 -- 08/2020}
-      {Sal College of Engineering}{Ahmedabad, India}
+    {Bachelor of Engineering in Information Technology}{08/2016 -- 08/2020}
+      {Sal College of Engineering, Ahmedabad, India}{CGPA: 8.05/10.0}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Proficient in}{: Python, Django, Django Rest Framework, HTML, CSS}
+\section{Skills}
+ \resumeSkillListStart
+   \vspace{0.05cm}\item{
+     \textbf{Programming}{: Python, JavaScript, Typescript}
    }
-   \item{
-     \textbf{Familiar with}{: Flask, JavaScript, PostgreSQL, MongoDB, DynamoDB, boto3, Docker, Terraform}
+   \vspace{0.1cm}\item{
+     \textbf{Web}{: Django (DRF, Celery - Python), Flask, Node.js, Angular, jQuery}
    }
-   \item{
-     \textbf{Operating System}{: Windows and Linux (Ubuntu/Debian)}
+   \vspace{0.1cm}\item{
+     \textbf{Databases}{: PostgreSQL, MongoDB, DynamoDB, AWS Athena, Redshift Spectrum}
    }
-   \item{
-     \textbf{Version Control}{: Git}
+   \vspace{0.1cm}\item{
+     \textbf{Misc}{: Git, Bash, Vim, Docker, Terraform, Elasticsearch, boto3, OpenCV, NumPy, Pillow}
    }
- \resumeSubHeadingListEnd
+ \resumeSkillListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
     
-    \resumeSubItem{Alot Todo (\href{http://github.com/meetdaxini/Alot_Todo}{\faGithub  \hspace{0.05cm} \texttt{meetdaxini/Alot\_Todo}})}
-      {Alot Todo is a multi-user task manager web app built using Django, HTML, CSS and Bootstrap. It is deployed using Heroku and PostgreSQL. Project is live at :} \newline \newline
-      \href{http://alot-todo.herokuapp.com}{\faLink \hspace{0.05cm} \texttt{alot-todo.herokuapp.com}}
+    \resumeSubItem{A lot Todo (\href{http://github.com/meetdaxini/Alot_Todo}{\faGithub  \hspace{0.05cm} \texttt{meetdaxini/Alot\_Todo}})}
+      {A lot Todo is a multi-user task manager web app built using Django, HTML, CSS, and Bootstrap. It is deployed using Heroku and PostgreSQL. The project is live at: \href{http://alot-todo.herokuapp.com}{\faLink \hspace{0.05cm} \texttt{alot-todo.herokuapp.com}}}
       
     \resumeSubItem{Movie Recommender (\href{http://github.com/meetdaxini/movie-recommender-project}{\faGithub  \hspace{0.05cm}
       \texttt{meetdaxini/movie-recommender-project}})}
-      {Built using Django, HTML, CSS and Bootstrap. It is deployed by using Terraform and Docker on Google Cloud Run with Google Cloud SQL(PostgreSQL) as database. It uses external APIs for getting movies data and recommendations \& also saves the movies data in the database so next time the same movie data will not be fetched from external api. Project is live at :  }\newline \newline
-      \href{https://movierecommender-njonx4n5hq-uc.a.run.app/}{\faLink \hspace{0.05cm} 
-    \texttt {movierecommender-njonx4n5hq-uc.a.run.app}}
-    
-    \resumeSubItem{My Portfolio (\href{https://github.com/meetdaxini/my_portfolio}{\faGithub  \hspace{0.05cm}
-      \texttt{meetdaxini/my\_portfolio}})}
-      {Simple portfolio of mine built using Django as back-end and HTML, CSS and Javascript for the front-end. Check it out at :  }\newline \newline
-      \href{https://meetdaxini.pythonanywhere.com/}{\faLink \hspace{0.05cm} 
-    \texttt {meetdaxini.pythonanywhere.com}}
+      {Built using Django, HTML, CSS, and Bootstrap. It is deployed by using Terraform and Docker on Google Cloud Run with Google Cloud SQL(PostgreSQL) as the database. It uses external APIs for getting movie data and recommendations \& also saves the movie data in the database so that next time the same movie data will not be fetched from external APIs. The project is live at: \href{https://movierecommender-kwhmrv2gdq-uc.a.run.app/}{\faLink \hspace{0.05cm}
+    \texttt {movierecommender-kwhmrv2gdq-uc.a.run.app}}} 
 
     \resumeSubItem{Faces from Keywords (\href{https://github.com/meetdaxini/Faces_from_Keywords}{\faGithub  \hspace{0.05cm}
       \texttt{meetdaxini/Faces\_from\_Keywords}})}
-      {In this project, I did character recognition using pytesseract on news paper clippings  to find particular keywords and if the keywords matched, then just the human faces in that image are cropped into contact sheet using openCV, numpy and Pillow. }
+      {In this project, I did character recognition using pytesseract on newspaper clippings to find a particular name, and if it is found, then just the human faces in that image are cropped into a contact sheet using a pretrained model with OpenCV, NumPy, and Pillow.}
     
   \resumeSubHeadingListEnd
 
@@ -155,22 +166,18 @@
 %-----------Certificates-----------------
 \section{Certifications}
   \resumeSubHeadingListStart
-  
-    \resumeSubheading
-    {Django for Everybody Specialization}{09/2020-11/2020}
-    {Coursera (University of Michigan)}
-    {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/NZCXMZVZSVFZ}{\faExternalLink View Certificate}}
-
     \resumeSubheading
     {SQL for Data Science} {07/2020-08/2020}
     {Coursera (University of California, Davis)}
     {\href{https://www.coursera.org/account/accomplishments/certificate/UQQXUZCP8HRC}{\faExternalLink  View Certificate}}
-    
+    \resumeSubheading
+    {Applied Machine Learning in Python}{04/2020-05/2020}
+    {Coursera (University of Michigan)}
+    {\href{https://www.coursera.org/account/accomplishments/certificate/ZV83MCNV8ALE}{\faExternalLink  View Certificate}}
     \resumeSubheading
     {Python3 Programming Specialization}{03/2020-06/2020}
     {Coursera (University of Michigan)}
     {\href{http://www.coursera.org/account/accomplishments/certificate/C2XVUU6PXKBY}{\faExternalLink  View Certificate}}
-    
   \resumeSubHeadingListEnd
 
 %-------------------------------------------

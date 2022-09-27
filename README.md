@@ -11,4 +11,4 @@ xelatex resume.tex
 ```
 Resume:
 
-![resume](https://user-images.githubusercontent.com/56286288/143275052-51e8488b-ef4e-40f4-aaf1-f7ad275519f3.png)
+![resume](https://user-images.githubusercontent.com/56286288/192429810-7c903922-2e9f-48d9-b28d-4554fb8bd2df.jpg)
